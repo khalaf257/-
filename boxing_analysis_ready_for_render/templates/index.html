@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>تحليل الأداء المهاري للملاكمة</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            width: 60%;
+            margin: auto;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        input[type="file"] {
+            padding: 10px;
+            margin: 10px;
+        }
+        button {
+            padding: 10px 30px;
+            background-color: #00c9a7;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #00b396;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>تحليل الأداء المهاري للملاكمة</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="video" required><br><br>
+            <button type="submit">رفع الفيديو</button>
+        </form>
+    </div>
+</body>
+</html>
